@@ -1,0 +1,632 @@
+
+/*页面内部的css样式*/
+@media (max-width: 1360px) {
+    #site-nav-bd .mobile a .qr {
+        top: 40px;
+    }
+}
+
+.w-lt-1250 #site-nav-bd .mobile a .qr {
+    top: 40px;
+}
+
+
+.favboxwrap {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.ju-ele-nav .ct ul.category {
+    padding: 5px 0;
+}
+
+li.brand-br {
+    float: none;
+}
+li{
+    list-style: none;
+}
+
+
+
+/*
+通用部分的css
+*/
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    height: 0;
+}
+
+
+/*
+最上面的panel
+*/
+
+#site-nav{
+    width: auto;
+    border-bottom: 1px solid #EFEFEF;
+    min-width: 950px;
+    position: relative;
+    word-wrap: normal;
+    z-index: 9001;
+    word-break: normal;
+    background: url(../images/header-background.png) 999em 0 no-repeat #f9f9f9;
+}
+#site-nav a{
+    font-family: "microsoft yahei";
+    color: #666;
+    text-decoration: none;
+
+}
+#site-nav a:hover{
+    color: #ff4444;
+    text-decoration: underline;
+}
+#site-nav-bd{
+
+    display: block;
+    position: relative;
+    width: 1072px;
+    background-color: transparent;
+    color:#000;
+
+    height: 23px;
+
+    /*line-height: 25px;*/
+    margin: 0 auto ;
+    padding: 5px 0;
+    z-index: 10000;
+}
+
+
+#site-nav-bd .mobile a{
+    padding:2px 0 2px 20px;
+    background:url("../images/phone-13-19.png") center left no-repeat;
+}
+
+#site-nav-bd .mobile .m-tip{
+    float: left;
+    width: 144px;
+    height: 18px;
+    top: 0;
+    right: 100%;
+    position: absolute;
+    background: url("../images/close-145-45.png") 0 bottom no-repeat;
+}
+
+#site-nav-bd .mobile .m-tip .m-text{
+    display: inline-block;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    height: 17px;
+    line-height: 17px;
+    margin-left: 5px;
+    font-size: 11px;
+    text-align: center;
+    float: left;
+}
+
+#site-nav-bd .mobile .m-tip .m-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+#site-nav-bd .menu-left{
+    margin: 0;
+    padding: 0;
+    float: left;
+    left: 0;
+    display: block;
+    position: absolute;
+}
+#site-nav-bd .quick-menu{
+    margin: 0;
+    padding: 0;
+    float:right;
+}
+#site-nav-bd .quick-menu li{
+    list-style: none;
+    float: left;
+    padding: 0.25em 0.75em;
+}
+
+
+#site-nav-bd .menu-hd{
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    line-height: 17px;
+    /*padding: 0 22px 0 10px;*/
+
+}
+
+#site-nav-bd .menu{
+
+}
+
+#site-nav-bd .menu:hover{
+    display: block;
+}
+
+#site-nav-bd .menu .mytaobao{
+    display: none;
+}
+#site-nav-bd .menu .menu-hd{
+    border : 1px solid transparent;
+}
+
+#site-nav-bd .menu:hover .menu-hd{
+    border : 1px solid #bfbfbf;
+    border-bottom : 1px solid #efefef;
+}
+
+#site-nav-bd .menu-bd{
+    height: 110px;
+    width:95px;
+    line-height: 1.7;
+    padding-bottom: 8px;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    left: 80%;
+}
+#site-nav-bd .quick-menu .menu .menu-hd b{
+    /*margin: 0;*/
+    /*padding: 0 0 5px 5px;*/
+    /*background-color: black;*/
+    /*width: 5px;*/
+    /*height: 5px;*/
+    border-color: #666 transparent transparent;
+    transition: transform 0.2s ease-in;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 0;
+
+}
+
+#site-nav-bd .quick-menu .menu:hover .menu-hd b ,#site-nav-bd .quick-menu .menu:focus .menu-hd b{
+
+    /*background-color: #000000;*/
+    -webkit-transform: rotate(180deg);
+    -webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(180deg);
+    -moz-transform-origin: 50% 30%;
+    transform: rotate(180deg);
+    transform-origin: 50% 30%;
+
+
+}
+
+#site-nav-bd .menu:hover .menu-bd{
+    display: block;
+}
+
+
+
+#site-nav-bd .mytaobao:hover .menu,#site-nav-bd .mytaobao:focus .menu{
+    background-color: #fff;
+}
+#site-nav-bd .mytaobao:hover .menu-hd{
+    /*border: 1px solid black;*/
+    border-bottom: 0;
+}
+#site-nav-bd .mytaobao:hover #myTaobaoPanel{
+    left:auto;
+    /*border: 1px solid #bfbfbf;*/
+    padding :8px 10px;
+}
+
+
+#site-nav-bd .mytaobao #myTaobaoPanel{
+    position: absolute;
+    width: 100px;
+    left:-999px;
+
+}
+
+
+
+
+/*page上面的内容css*/
+#page{
+    overflow: visible;
+    background-color: #f3f3f3;
+}
+#J_JuNav{
+    margin: 20px 0 7px 0;
+    height: 40px;
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    border-bottom:3px solid hotpink;
+}
+#J_JuNav .inner{
+
+    text-align: center;
+    width:1074px;
+    margin: 0 auto;
+}
+#J_JuNav .inner .logo{
+    padding: 0 10px;
+    float: left;
+}
+#J_JuNav .inner .logo h1{
+    margin: -5px 0;
+}
+#J_JuNav .inner .logo .non-fixed-logo  img{
+    /*float: left;*/
+    width: 120px;
+    height: 50px;
+
+}
+
+
+#J_JuNav .inner .nav-menu li{
+    padding: 0 15px;
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    top : 5px;
+
+}
+/*增加特殊性*/
+#page #J_JuNav .inner .nav-menu .menu-home{
+    background: #F42E64;
+    border-radius: 5px;
+}
+#J_JuNav .inner .nav-menu .menu-home a span{
+    color: #fff;
+    padding: 0 5px;
+
+}
+
+
+#J_JuNav .inner .nav-menu li a{
+    text-decoration: none;
+}
+#J_JuNav .inner .nav-menu li a span{
+
+    font-size: 15px;
+    color: #F42E64;
+}
+#J_JuNav .inner .nav-menu li:hover{
+    background-color: #ffebd7;
+    border-radius: 5px;
+
+}
+#J_JuNav .inner .other-nav{
+    list-style-type: none;
+    float: right;
+    height: 56px;
+}
+
+
+/*右上角的other-nav*/
+#J_JuNav .inner .other-nav{
+
+    display: block;
+    height: 72px;
+    width: 262px;
+    margin-top: -22px;
+    float: right;
+}
+#J_JuNav .inner .other-nav li{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+
+#J_JuNav .inner .other-nav li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 74px;
+    height: 54px;
+    background: url(../images/other-nav264-73.jpg) 0 1px no-repeat;
+
+}
+
+#J_JuNav .inner .other-nav .lowest-price a{
+    background-position: -181px -5px;
+}
+#J_JuNav .inner .other-nav .free-return a{
+    width: 96px;
+    background-position: -83px -5px;
+}
+#J_JuNav .inner .other-nav .free-post a{
+    background-position: -4px -5px;
+}
+
+/*左边导航CSS的内容*/
+#daohang{
+    left:50%;
+    margin-left: -540px;
+    position: absolute;
+    float: left;
+    display: block;
+    /*visibility: hidden;*/
+    top: 118px;
+    /*background-color: yellowgreen;*/
+}
+
+#daohang[fixed="true"]{
+    position: fixed;
+    left: 50%;
+    top: 0!important;
+    margin-left: -540px;
+}
+#daohang .J_JuFNav{
+    height: auto;
+    /*margin-left: 6px;*/
+    width: 122px;
+    padding: 0 0 5px;
+    border-top: 2px solid #FFBC8A;
+    overflow: hidden;
+
+}
+#daohang .J_JuFNav h2{
+    color: #5e3500;
+    overflow: hidden;
+    background: #FFEDE1;
+    font-weight: 400;
+    padding-left: 12px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+}
+#daohang .J_JuFNav h2 .link-tit{
+    float: left;
+    color: #5e3500;
+}
+#daohang .J_JuFNav h2 .link-tit:hover{
+    color: #d51938;
+    text-decoration: none;
+}
+
+#daohang .J_JuFNav h2 .link-rt{
+    float: right;
+    color: #49B577;
+    outline: 0;
+    width: 72px;
+    text-align: center;
+}
+#daohang .J_JuFNav h2 .link-rt:hover{
+    text-decoration: underline;
+}
+
+#daohang .J_JuFNav .category{
+    list-style: none;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#daohang .J_JuFNav .category li{
+    float : left;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#daohang .J_JuFNav .category li a{
+    color: #644b4f;
+}
+#daohang .J_JuFNav .category li a span{
+    padding: 2px 15px;
+    border-radius: 3px;
+    line-height: 20px;
+}
+#daohang .J_JuFNav .category li a:hover span{
+    background-color: #ffebd7;
+}
+#daohang .J_JuFNav .link-city{
+    float: right;
+    color: #b68c47;
+    width: 72px;
+    text-align: center;
+}
+
+
+#daohang .J_JuFNav .link-city:hover{
+    text-decoration: underline;
+}
+
+/*content内容CSS*/
+#page #content{
+    width: 940px;
+    padding-left: 136px;
+    padding-right: 2px;
+    margin: 0 auto;
+    float: left;
+    margin: 0 136px;
+    list-style: none;
+    display: block;
+    z-index: 10;
+    /*visibility: hidden;*/
+}
+#page #content .topbanner{
+    overflow: hidden;
+    width : 100%;
+    padding-top:10px;
+}
+
+#page #content .topbanner .mainbanner{
+    height: 100%;
+}
+#page #content .topbanner .mainbanner .J_MainBanner .chnls-stage li{
+    position: absolute;
+}
+
+#page #content .topbanner .mainbanner .chnls-stick{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+}
+#page #content .topbanner .mainbanner .chnls-stick li{
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 20;
+}
+
+
+
+#page #content .topbanner .subbanner{
+    float: right;
+    padding: 0;
+    width: 319px;
+    height: 222px;
+    overflow: visible;
+    background: 0 0;
+}
+#page #content .topbanner .subbanner .subentre div:first-child{
+    /*border-bottom: 1px solid #dedede;*/
+}
+#page #content .topbanner .subbanner .subentre a img{
+    width: 320px;
+}
+#page #content .topbanner .subbanner .subentre a:hover img{
+    -moz-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
+
+
+
+
+#page #content .home-brand-point{
+    border: 1px solid #d3d3d3;
+    border-color: rgba(0,0,0,.12);
+    margin: 14px 0 0;
+    background: #fff;
+}
+#page #content .home-brand-point .point-tit{
+    height: 36px;
+    padding-left: 12px;
+    width: auto;
+}
+
+#page #content .home-brand-point .point-tit h2{
+    float: left;
+    color: #f72862;
+    font-size: 18px;
+    margin-top: 8px;
+}
+#page #content .home-brand-point .point-tit .point-slogan {
+    line-height: 21px;
+    float: left;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #555;
+    margin-top: 12px;
+    font-size: 12px;
+}
+#page #content .home-brand-point .point-tit .point-more{
+    margin-top: 8px;
+    text-decoration: none;
+    float: right;
+    padding: 5px 0 5px 15px;
+    background-color: #f72862;
+    color: #ffffff;
+    font-size: 13px;
+    /*line-height: 20px;*/
+}
+#page #content .home-brand-point .point-tit .point-more b{
+    display: block;
+    position: relative;
+    float: right;
+    margin-left: 5px;
+
+    /*width:10px;*/
+    /*height: 10px;*/
+    /*background-color: #000000;*/
+    border-style: solid;
+    border-width: 5px;
+    line-height: 20px;
+    border-color:  transparent  transparent transparent #fff;
+}
+#page #content .home-brand-point .point-tit .J_PointCountDown{
+    float: left;
+    /*display: none;*/
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+#page #content .home-brand-point .point-tit .J_PointCountDown  .J_PointCountDowntit{
+    color: #7E7E7E;
+    line-height: 21px;
+    font-size: 12px;
+}
+
+#page #content .home-brand-point .point-tit .J_PointCountDown  .clock {
+    font-size: 13px;
+}
+#page #content .home-brand-point .point-tit .J_PointCountDown  .clock .clock_title{
+    margin: 0 5px;
+    font-size: 15px;
+    padding: 2px 5px ;
+    background-color: #8e92ac;
+    border-radius: 3px;
+    color: #fff;
+}
+#page #content .home-brand-point .J_HomePointBanner{
+    padding: 0 10px;
+    height: 210px;
+    width: 918px;
+    position: relative;
+    overflow: hidden;
+}
+
+#page #content .home-brand-point .J_HomePointBanner .scroller .brands-stage{
+    width: 920px;
+    position: relative;
+    height: 212px;
+    overflow: hidden;
+
+}
+#page #content .home-brand-point .J_HomePointBanner .scroller .brands-stage .mitem-status {
+    width: 218px;
+    display: block;
+    float: left;
+    margin: 3px 8px 3px 4px;
+    position: relative;
+
+}
+#page #content .home-brand-point .J_HomePointBanner .scroller .brands-stage .mitem-status h3{
+    
+}
+
+
+
+
+
+
